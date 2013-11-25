@@ -1,0 +1,1 @@
+web: node ssg-hook.js

@@ -1,0 +1,14 @@
+{
+    "name": "ssg-hook",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/stephanfowler/ssg-hook.git"
+    },
+    "version": "0.1.0",
+    "dependencies": {
+        "express": "3.x",
+        "emailjs": "0.3.4",
+        "queue-async": "1.0.x"
+    },
+    "private": true
+}
