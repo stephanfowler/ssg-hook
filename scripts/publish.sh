@@ -9,9 +9,6 @@ set -e
 # Clone the fork https://github.com/developmentseed/s3cmd
 # and install it with `python setup.py install`.
 
-# Set the path of the hosted site
-site="/usr/share/nginx/www/$repo"
-
 # S3 bucket
 bucket="aws-frontend-store/STEPHAN"
 
@@ -22,10 +19,5 @@ giturl=$4
 source=$5
 build=$6
 
-# Remove old site files, move new ones in place
-rm -rf $site
-cp $build $site
-
-# if not root repo, sync to subdirectory
 s3cmd sync --acl-public --delete-removed $build/ s3://$bucket/$repo/
 
