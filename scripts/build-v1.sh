@@ -25,5 +25,6 @@ cd -
 
 # Run ssg
 cd $source
-ssg build --source $source --destination $build
+echo "Building the site"
+#ssg build --source $source --destination $build
 cd -

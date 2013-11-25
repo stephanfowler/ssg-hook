@@ -23,7 +23,8 @@ git checkout $branch
 git pull origin $branch
 cd -
 
-# Run ssg
+# Run stuff
 cd $source
-ssg $source $build --no-server --no-auto
+echo "Building the site with Punch..."
+punch generate
 cd -
