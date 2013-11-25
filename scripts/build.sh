@@ -25,6 +25,5 @@ cd -
 
 # Run stuff
 cd $source
-echo "Building the site with Punch..."
 punch generate
 cd -
