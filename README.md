@@ -5,7 +5,7 @@ Listen for post-commit HTTP requests from a Git repository, pull down that repos
 ### Installation
 
 - run `$ npm install`
-- Set a [Web hook](https://help.github.com/articles/post-receive-hooks) on your repo (probably GitHub) that points to your ssg-hook server:
+- Set a [Web hook](https://help.github.com/articles/post-receive-hooks) on your repo (probably on GitHub) that points to your ssg-hook server:
 ```
 http://example.com:8080/hooks/ssg
 ```
