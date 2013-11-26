@@ -34,13 +34,6 @@ app.post('/hooks/ssg/:branch', function(req, res) {
             return;
         }
 
-        // End early if not permitted branch
-        if (data.branch !== branch) {
-            console.log('Not ' + branch + ' branch.');
-            if (typeof cb === 'function') cb();
-            return;
-        }
-
         // Process webhook data into params for scripts
         /* repo   */ params.push(data.repo);
         /* branch */ params.push(data.branch);

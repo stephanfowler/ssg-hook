@@ -19,5 +19,5 @@ giturl=$4
 source=$5
 build=$6
 
-s3cmd sync --acl-public --delete-removed $build/ s3://$bucket/$repo/
+s3cmd sync --acl-public --delete-removed $build/ s3://$bucket/$repo/$branch/
 
