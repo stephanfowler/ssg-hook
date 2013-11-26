@@ -7,7 +7,7 @@ Listens for webhook posts from GitHub, generates a website with Punch (or whatev
 - run `$ npm install`
 - Set a [Web hook](https://help.github.com/articles/post-receive-hooks) on your GitHub repo that points to your ssg-hook server:
 ```
-http://example.com:8080/hooks/ssg/master
+http://example.com:8080/hooks/ssg
 ```
 
 ### Configuration
