@@ -1,0 +1,12 @@
+{
+    "gh_server": "github.com",
+    "temp": "/home/ubuntu/tmp",
+    "scripts": {
+        "build": "./scripts/build.sh",
+        "publish": "./scripts/publish.sh"
+    },
+    "accounts": [
+        "guardian",
+        "stephanfowler"
+    ]
+}
