@@ -1,12 +1,31 @@
-ssg-hook
-========
+## Post Commit build + publish for Static Site Generators
 
-Post-commit builder for static site generators. Currently builds [Punch](https://github.com/laktek/punch) sites, but easily adapted.
+Listens for webhook posts from GitHub, generates a website with Punch (or whatever you want), and moves it to S3.
 
-Add this WebHook URL to your Punch repo:
+### Installation
+
+- run `$ npm install`
+- Set a [Web hook]() on your GitHub repo that points to your ssg-hook server:
 ```
 http://example.com:8080/hooks/ssg/master
 ```
-Run like this:
-```
-$ ./ssg-hook.js
+
+### Configuration
+
+Adjust `build.sh` and `publish.sh` to suit your workflow. By default, they generate a Punch site and publish it to an S3 directory.
+
+Configuration attributes:
+
+- `gh_server` The GitHub server from which to pull code
+- `temp` A directory to store code and site files
+- `scripts`
+    - `build` A script to run to build the site
+    - `publish` A script to run to publish the site
+- `accounts` An array of accounts or organizations whose repositories can be used with this server
+
+### Usage
+
+- run as executable: `$ ./ssg-hook.js`
+
+
+Based on [jekyll-hook](https://github.com/developmentseed/jekyll-hook)
