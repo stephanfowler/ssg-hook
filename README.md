@@ -27,5 +27,6 @@ Configuration attributes:
 
 - run as executable: `$ ./ssg-hook.js`
 
+---------------------------------------
 
 Based on [jekyll-hook](https://github.com/developmentseed/jekyll-hook)
