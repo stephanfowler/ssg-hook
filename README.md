@@ -1,6 +1,6 @@
 ## Post-commit publisher for Static Site Generators
 
-Listen for webhook posts from GitHub, generate a static website, move it to S3.
+Listen for post-commit HTTP requests from a Git repository, pull down that repository, generate a static website from it, sync it up to S3.
 
 ### Installation
 
