@@ -11,7 +11,7 @@ var spawn   = require('child_process').spawn;
 app.use(express.bodyParser());
 
 // Receive webhook post
-app.post('/hooks/ssg/:branch', function(req, res) {
+app.post('/hooks/ssg', function(req, res) {
 
     // Close connection
     res.send(202);
@@ -19,7 +19,6 @@ app.post('/hooks/ssg/:branch', function(req, res) {
     // Queue request handler
     tasks.defer(function(req, res, cb) {
         var data = JSON.parse(req.body.payload);
-        var branch = req.params.branch;
         var params = [];
 
         // Parse webhook data for internal variables
