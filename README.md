@@ -1,6 +1,6 @@
 ## Post-commit publisher for Static Site Generators
 
-Listens for webhook posts from GitHub, generates a website with Punch (or whatever you want), and moves it to S3.
+Listen for webhook posts from GitHub, generate a static website, move it to S3.
 
 ### Installation
 
