@@ -12,7 +12,7 @@ http://example.com:8080/hooks/ssg
 
 ### Configuration
 
-Adjust `build.sh` and `publish.sh` to suit your workflow. By default, they generate a Punch site and publish it to an S3 directory.
+Adjust `build.sh` and `publish.sh` to suit your workflow. By default, they generate a Punch site (or whatever, see `scripts/build.sh`) and publish it to an S3 directory (as specified in `scripts/publish.sh`).
 
 Configuration attributes:
 
